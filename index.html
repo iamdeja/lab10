@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lab 10</title>
+    <script async src="script.js" type="module"></script>
+  </head>
+  <body>
+    <p><span id="user-name"></span>'s shopping list</p>
+    <!-- Do not rename as form, due to button automatically posting-->
+    <div>
+      <label for="product-name">Product</label>
+      <input id="product-name" type="text" />
+      <label for="product-qty">Quantity</label>
+      <input id="product-qty" min="0" type="number" />
+      <button id="add-item">Add to list</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Product</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody class="c-products-list"></tbody>
+    </table>
+  </body>
+</html>
